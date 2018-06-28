@@ -1,5 +1,3 @@
-// Belum selesai...
-
 function hitungHuruf(kata) {
   var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
   var kataArr = kata.split(' ');
@@ -26,20 +24,32 @@ function hitungHuruf(kata) {
       }
     }
   }
-  var str = kataArr[0];
+  console.log(pengulanganArr)
+  console.log(kataArr)
+  var str = '';
   for (var n = 0; n < pengulanganArr.length; n++) {
-    for (var p = n + 1; p < pengulanganArr.length - n; p++) {
-      if (pengulanganArr[n].length === pengulanganArr[p].length) {
-        str = kataArr[n];
-        // for (var q = 0; q < pengulanganArr[n][p].length; q++) {
-        //   if (highestNum < pengulanganArr[]) {}
-        // }
-      // } else if (){
-      } else if (pengulanganArr[n].length < pengulanganArr[p].length) {
-        str = kataArr[p];
+    if (pengulanganArr[n] ==! undefined) {
 
+    } else {
+      if (pengulanganArr[n].length > str.length) {
+        str = kataArr[n]
+      } else {
+        str = str
       }
     }
+
+    // for (var p = 1; p < pengulanganArr.length - 1; p++) {
+    //   if (pengulanganArr[n].length === pengulanganArr[p].length) {
+    //     str = kataArr[n];
+    //     // for (var q = 0; q < pengulanganArr[n][p].length; q++) {
+    //     //   if (highestNum < pengulanganArr[]) {}
+    //     // }
+    //   // } else if (){
+    //   } else if (pengulanganArr[n].length < pengulanganArr[p].length) {
+    //     str = kataArr[p];
+
+    //   }
+    // }
   }
   // console.log(pengulanganArr)
   return str;
