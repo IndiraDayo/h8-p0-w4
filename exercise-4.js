@@ -4,9 +4,9 @@ function cariModus(arr) {
 
   var highestIndex = 0;
 
-  for (i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; i++) {
     var val = 1;
-    for (j = i + 1; j < arr.length; j++) {
+    for (var j = i + 1; j < arr.length; j++) {
       if (arr[i] === arr[j]) {
         numAndVal.push([]);
         numAndVal[index].push(arr[i]);
@@ -24,18 +24,17 @@ function cariModus(arr) {
     return - 1;
   } else {
     highest = numAndVal[0][1];
-    for (j = 0; j < numAndVal.length; j++) {
-      if (numAndVal[j][1] === arr.length) {
+    for (var k = 0; k < numAndVal.length; k++) {
+      if (numAndVal[k][1] === arr.length) {
         return -1;
-        break;
       } else if (numAndVal.length === 1) {
         return numAndVal[0][0];
-      } else if (highest === numAndVal[j][1]){
+      } else if (highest === numAndVal[k][1]){
         highest = highest;
         highestIndex = highestIndex;
-        if (highest < numAndVal[j][1]) {
-          highest = numAndVal[j][1];
-          highestIndex = j;
+        if (highest < numAndVal[k][1]) {
+          highest = numAndVal[k][1];
+          highestIndex = k;
         }
       }
     }
