@@ -28,7 +28,7 @@ function hitungHuruf(kata) {
   console.log(kataArr)
   var str = '';
   for (var n = 0; n < pengulanganArr.length; n++) {
-    if (pengulanganArr[n] ==! undefined) {
+    if (pengulanganArr[n] === undefined) {
 
     } else {
       if (pengulanganArr[n].length > str.length) {
