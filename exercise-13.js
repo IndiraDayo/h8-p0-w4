@@ -7,7 +7,7 @@ function countProfit(shoppers) {
   if (shoppers[0] === undefined) {
     return [];
   } else {
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < listBarang.length; i++) {
       var stockDataObj = {
         product: listBarang[i][0],
         shoppers: [],
